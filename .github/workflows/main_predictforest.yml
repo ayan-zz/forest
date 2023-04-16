@@ -23,14 +23,14 @@ jobs:
       uses: docker/login-action@v1
       with:
         registry: https://forestcoverprediction.azurecr.io/
-        username: ${{ secrets.AzureAppService_ContainerUsername_5b5ff444b45541aba90c1e5ed447656b }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_94eb9e5d0292402cbd9f88c7458059a9 }}
+        username: ${{ secrets.AzureAppService_ContainerUsername_2c9c8496e7ba453881cab2938142bbb5 }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_8b586474def64d6e8d55e0aeb46c2faa }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: forestcoverprediction.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_5b5ff444b45541aba90c1e5ed447656b }}/forestcover1:${{ github.sha }}
+        tags: forestcoverprediction.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_2c9c8496e7ba453881cab2938142bbb5 }}/forestcover1:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -47,5 +47,5 @@ jobs:
       with:
         app-name: 'predictforest'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_61b01778709946419382b25c99386392 }}
-        images: 'forestcoverprediction.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_5b5ff444b45541aba90c1e5ed447656b }}/forestcover1:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_a427dff0a5404a739efdff69dcb10dcc }}
+        images: 'forestcoverprediction.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_2c9c8496e7ba453881cab2938142bbb5 }}/forestcover1:${{ github.sha }}'
