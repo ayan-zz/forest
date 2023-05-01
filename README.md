@@ -65,7 +65,7 @@ Technology Hacks
 * Front End: HTML
 * Backend: Python
 * DataBase: Cassandra (DataStax Atlas)
-* Deployment: Microsoft Azure
+* Deployment: AWS ElasticBeanStalk
 
 ![Alt text](Untitled2.png)
 ![Alt text](Untitled.png)
