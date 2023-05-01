@@ -46,3 +46,26 @@ Number of records of Krummholz: 	 20510
 Number of records of other: 		     0 	
 		
 Total records:				581012
+
+Steps Involved:
+1. Data Ingestion from DB
+2. EDA and feature Engg
+3. Data Pipeline for data preprocessing
+4. Split data and store in artifacts folder
+5. Data Transformation and preprocessing 
+6. Model trainer 
+7. Validation of data
+8. Best model seleted 
+9. Prediction pipeline
+10. App.py file for route GET/POST
+11. Deployment in Azure/AWS 
+
+Technology Hacks
+
+* Front End: HTML
+* Backend: Python
+* DataBase: Cassandra (DataStax Atlas)
+* Deployment: Microsoft Azure
+
+![Alt text](Untitled2.png)
+![Alt text](Untitled.png)

@@ -37,22 +37,21 @@ class CustomData:
                  Horizontal_Distance_To_Fire_Points: int,
                  Wilderness: str,
                  Soil: str):
-
-                 self.Id =Id
-                 self.Elevation = Elevation
-                 self.Aspect = Aspect
-                 self.Slope = Slope
-                 self.Horizontal_Distance_To_Hydrology=Horizontal_Distance_To_Hydrology
-                 self.Vertical_Distance_To_Hydrology=Vertical_Distance_To_Hydrology
-                 self.Horizontal_Distance_To_Roadways=Horizontal_Distance_To_Roadways
-                 self.Hillshade_9am = Hillshade_9am
-                 self.Hillshade_Noon= Hillshade_Noon
-                 self.Hillshade_3pm= Hillshade_3pm
-                 self.Horizontal_Distance_To_Fire_Points=Horizontal_Distance_To_Fire_Points
-                 self.Wilderness=Wilderness
-                 self.Soil=Soil
                 
-    
+                self.Id =Id
+                self.Elevation = Elevation
+                self.Aspect = Aspect
+                self.Slope = Slope
+                self.Horizontal_Distance_To_Hydrology=Horizontal_Distance_To_Hydrology
+                self.Vertical_Distance_To_Hydrology=Vertical_Distance_To_Hydrology
+                self.Horizontal_Distance_To_Roadways=Horizontal_Distance_To_Roadways
+                self.Hillshade_9am = Hillshade_9am
+                self.Hillshade_Noon= Hillshade_Noon
+                self.Hillshade_3pm= Hillshade_3pm
+                self.Horizontal_Distance_To_Fire_Points=Horizontal_Distance_To_Fire_Points
+                self.Wilderness=Wilderness
+                self.Soil=Soil
+                
     def get_data_as_dataframe(self):
           try:
                 custom_data_input_dict={
