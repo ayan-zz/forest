@@ -1,5 +1,5 @@
-## Understanding forest composition is a valuable aspect of managing the health and vitality of our wilderness areas. 
-Classifying cover type can help further research regarding forest fire susceptibility and de/re-forestation concerns.
+## Classifying cover type which can help research regarding forest fire susceptibility and de/re-forestation concerns.
+Understanding forest composition is a valuable aspect of managing the health and vitality of our wilderness areas. 
 Independent variables were derived from data originally obtained from US Geological Survey (USGS) and USFS data. 
 Data is in raw form (not scaled) and contains binary (0 or 1) columns of data for qualitative independent variables (wilderness areas and soil types).
 
