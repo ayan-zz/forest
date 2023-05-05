@@ -2,6 +2,8 @@ import os
 import sys
 import numpy  as np
 import pandas as pd
+import warnings
+warnings.filterwarnings('ignore')
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler,LabelEncoder, OneHotEncoder
 from sklearn.compose import ColumnTransformer
